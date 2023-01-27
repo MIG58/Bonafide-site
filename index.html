@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>GHAR Dekho</title>
 </head>
 
@@ -22,21 +24,36 @@
     <!-- sticky bar set -->
     <header class="text-gray-600 body-font w-full h-24  px-8 ">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a class=" flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <a class=" flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="index.html">
                 <img src="logo/logorbg.png" alt="" style="height:65px;">
             </a>
 
             <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center font-medium">
-                <a class="mr-5 hover:text-black">Home</a>
+
+                <ul class="hidden space-x-2 md:inline-flex">
+                    <li><a href="#" class="px-4 py-2 font-semibold text-gray-600 rounded hover:text-black">Home</a></li>
+                    <li><a href="#" class="px-4 py-2 font-semibold text-gray-600 rounded hover:text-black">Blogs</a>
+                    </li>
+                    <li><a href="#" class="px-4 py-2 font-semibold text-gray-600 rounded hover:text-black">About Us</a>
+                    </li>
+                    <li><a href="#" class="px-4 py-2 font-semibold text-gray-600 rounded hover:text-black">Contact
+                            Us</a></li>
+                    <button>
+                        <li><a style="display: block; margin-top: -5px;" href="test.html"
+                                class="inline-flex animate-pulse hover:animate-none items-center bg-red-200 border-0 py-1 px-3 focus:outline-none hover:bg-red-300 hover:text-black rounded text-base font-medium mt-4 md:mt-0">Register
+                            </a></li>
+                    </button>
+                </ul>
+
+                <!-- <a class="mr-5 hover:text-black">Home</a>
                 <a class="mr-5 hover:text-gray-900">PG</a>
                 <a class="mr-5 hover:text-gray-900">Rent</a>
-                <a class="mr-5 hover:text-gray-900">About Us</a>
+                <a class="mr-5 hover:text-gray-900">About Us</a> -->
             </nav>
-            <button
+            <!-- <button
                 class="inline-flex animate-pulse hover:animate-none items-center bg-red-200 border-0 py-1 px-3 focus:outline-none hover:bg-red-300 rounded text-base font-medium mt-4 md:mt-0">Register
 
-                </svg>
-            </button>
+            </button> -->
         </div>
     </header>
 </div>
